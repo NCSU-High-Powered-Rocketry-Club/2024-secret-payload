@@ -20,9 +20,11 @@ esp-backtrace = { version = "0.14.0", features = [
 esp-hal = { version = "0.20.1", features = [ "esp32", "async" ] }
 esp-hal-embassy = { version = "0.3.0", features = [ "esp32" ] }
 esp-println = { version = "0.11.0", features = ["esp32", "log"] }
+heapless = { version = "0.8.0", features = ["ufmt"] }
 log = { version = "0.4.21" }
 mpu6050-dmp = { git = "https://github.com/barafael/mpu6050-dmp-rs", version = "0.4.0" }
 static_cell = "2.1.0"
+ufmt = "0.2.0"
 [profile.dev]
 # Rust debug is too slow.
 # For debug builds always builds with some optimization
